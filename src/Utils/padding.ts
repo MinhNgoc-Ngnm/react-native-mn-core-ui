@@ -1,8 +1,8 @@
-import type { ViewStyle } from 'react-native';
+// import type { ViewStyle } from 'react-native';
 import type { PaddingProps } from '../types';
 import { calculateValue, removeUndefined } from './other';
 
-export const calculatePadding: (p: PaddingProps) => ViewStyle = (props) => {
+export const calculatePadding: (p: PaddingProps) => any = (props) => {
   const { padding, ...rest } = props;
   return {
     ...calculateValue(padding, 'padding'),
